@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+    
+.all-content{
+    background: #c4c4c4;
+}
+html ::-webkit-scrollbar{
+    background-color: white;
+}
+html ::-webkit-scrollbar-thumb{
+    background: black;
+
+}
+html ::-webkit-scrollbar{
+    width: 5px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.arrow{
+    position: fixed;
+    height: 50px;
+    bottom: 30px;
+    right: 20px;    
+}
+
+/* navbar start */
+#navbar{
+
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+#logo img{
+    border-radius: 10px;
+    width: 170px;
+    margin-left: 50px;
+    margin-right: 100px;
+    border: black solid 1px;
+    background-color: #c4c4c4;
+}
+
+.nav-item .nav-link{
+    color: #17b2e2;
+    margin-left: 10px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.nav-item .nav-link:hover{
+    background: #8be4fd;
+    border-radius: 10px;
+    color: black;
+}
+#navbar form button{
+    background: black;
+    color: #015369;
+    border: 1px solid white;
+}
+
+/* navbar end */
+
+
+
+
+
+/* home section start */
+.banner-image{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(https://t4.ftcdn.net/jpg/05/64/25/51/240_F_564255140_UJoQZteU32GqxtZhi7tTCYO45BM652Im.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+}
+#home .content{
+    padding-top: 200px;
+    margin-left: 50px;
+}
+#home .content h3{
+    font-size: 70px;
+    color: white;
+}
+#home .content p{
+    margin-top: 30px;
+    color: white;
+}
+
+#btn{
+    width: 250px;
+    height: 36px;
+    margin-top: 20px;
+    background: white;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    transition: 0.5s ease;
+    cursor: pointer;
+    transition: transform .5s ease-in-out;
+    
+}
+#btn:hover{
+    background: #67ddfd;
+    color: black;
+    transform: scale(1.3);
+}
+.homebottom {
+    color: black;
+    text-align: center;
+    border-bottom: #015369 solid 1px;
+    margin:auto;
+}
+.homebottom span {
+    color: #015369;
+    font-size: 25px;
+}
+/* home section end */
+
+
+
+/* about section start */
+#about{
+    height: 100vh;
+}
+#about .container{
+    padding-top: 70px;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 50px;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+}
+.heading span{
+    color: #015369;
+}
+#about .card{
+    border-radius: 10px;
+}
+#about .card img{
+    border-radius: 10px;
+}
+#about-btn{
+    width: 250px;
+    height: 36px;
+    border: 2px solid black;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+#about-btn:hover{
+    background-color: #015369;
+    color: white;
+}
+@media screen and (max-width:766px){
+    #about p{
+        font-size: 15px;
+    }
+    #about{
+        height: 120vh;
+    }
+    #column{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #about h3{
+        padding-top: 30px;
+    }    
+}
+/* about section end */
+
+/* our gallary start */
+#gallary{
+    width: 100%;
+}
+.heading5{
+    text-align: center;
+    padding-top: 150px;
+    font-size: 30px;
+    font-weight: bold;
+}
+#gallary .heading5 span{
+    color: #015369;
+}
+#gallary .card{
+    border-radius: 10px;
+    cursor: pointer;
+}
+#gallary .card img{
+    border-radius: 10px;
+}
+/* our gallary end */
+
+
+/* blogs start */
+#blogs{
+    width: 100%;
+}
+#blogs .heading7{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+}
+#blogs .heading7 span{
+    color: #015369;
+}
+#blogs .container{
+    margin-top: 60px;
+}
+#blogs h5{
+    color: #015369;
+}
+#blog-btn{
+    width: 200px;
+    height: 36px;
+    border: none;
+    color: white;
+    background: #015369;
+    cursor: pointer;
+}
+/* blogs end */
+
+/* footer start */
+#footer{
+    width: 100%;
+    background: #c4c4c4;
+    padding-bottom: 20px;
+    padding-top: 100px;
+}
+.footer-logo img{
+    width: 180px;
+    border-radius: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.socail-links i{
+    font-size: 17px;
+    margin-left: 10px;
+    margin-top: 30px;
+    padding: 10px;
+    background: black;
+    color: #67ddfd;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.credits{
+    color: #015369;
+    margin-top: 20px;
+    text-shadow: 0px 0px 1px black;
+}
+.credits a{
+    text-decoration: none;
+    color: #232323;
+    font-weight: bold;
+}
+#credits a span{
+    color: black;
+}
+.copyright span{
+    color: #015369;
+}
+/* footer end */
+
+/* career start */
+#topparagraph {
+    padding: 150px;
+}
+
+#centertext {
+    padding-left: 50px;
+    padding-right: 30px;
+}
+/* career end */
+
+
+
+/* contact start */
+#contact{
+    width: 100%;
+    height: 100vh;
+    padding-top: 120px;
+}
+#contact .container-fluid{
+    width: 80%;
+    height: 80vh;
+    background: linear-gradient(80deg, white 30%, #015369 20%);
+    border-radius: 10px;
+}
+.heading6{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 70px;
+}
+.heading6 span{
+    color: #015369;
+}
+#contact p{
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+}
+#contact input{
+    width: 360px;
+    border: none;
+    border-bottom: 1px solid #015369;
+}
+#contact textarea {
+    border: 1px solid #015369;
+    width: 360px;
+    border: none;
+}
+#contact-btn{
+    width: 200px;
+    height: 36px;
+    border: black solid 1px;
+    background: #015369;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#col{
+    width: 40%;
+    height: 56vh;
+    background: black;
+    margin-top: 78px;
+}
+#contact h1{
+    color: white;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#contact #col p{
+    font-size: 15px;
+    color: white;
+    margin-left: 13px;
+    margin-top: 30px;
+}
+@media screen and (max-width:766px){
+    #contact .container{
+        background: white;
+    }
+    #col{
+        width: 100%;
+        background: #232323;
+    }
+    #contact{
+        height: 150vh;
+    }
+    #contact input{
+        width: 250px;
+    }
+}   
+/* contact end */
