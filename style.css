@@ -31,7 +31,6 @@ html{
 
 /* navbar start */
 #navbar{
-
     top: 0;
     left: 0;
     overflow: hidden;
@@ -42,12 +41,21 @@ html{
 #logo img{
     border-radius: 10px;
     width: 170px;
-    margin-left: 50px;
-    margin-right: 100px;
     border: black solid 1px;
     background-color: #c4c4c4;
 }
-
+.navbar .navbar-nav{
+    width: 100%;
+    border-radius: 10px;
+    justify-content: center;
+    background: linear-gradient(70deg, white, black , white);
+}
+#navlocation{
+    width: 80%;
+    border-radius: 10px;
+    justify-content: center;
+    background: linear-gradient(70deg, white, black , white);
+}
 .nav-item .nav-link{
     color: #17b2e2;
     margin-left: 10px;
@@ -56,30 +64,29 @@ html{
 }
 .nav-item .nav-link:hover{
     background: #8be4fd;
-    border-radius: 10px;
+    border-radius: 5px;
     color: black;
 }
-#navbar form button{
+#navbar #search .btn{
     background: black;
     color: #015369;
     border: 1px solid white;
 }
-
+#navbar #search {
+    margin-left: 15px;
+}
 /* navbar end */
-
-
-
 
 
 /* home section start */
 .banner-image{
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(https://t4.ftcdn.net/jpg/05/64/25/51/240_F_564255140_UJoQZteU32GqxtZhi7tTCYO45BM652Im.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(./images/homebanner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100%;
 }
 #home .content{
-    padding-top: 200px;
+    padding-top: 180px;
     margin-left: 50px;
 }
 #home .content h3{
@@ -89,6 +96,7 @@ html{
 #home .content p{
     margin-top: 30px;
     color: white;
+    font-size: 30px;
 }
 
 #btn{
@@ -174,9 +182,175 @@ html{
     }
     #about h3{
         padding-top: 30px;
-    }    
+    } 
+    .navbar #navlocation{
+        width: 100%;
+    }
+    #home .content{
+        padding-top: 130px;
+        margin-left: 50px;
+    } 
 }
 /* about section end */
+
+/* location start */
+#location {
+    justify-content: center;
+    padding-top: 120px;
+    display: flex;    
+}
+#breakline {
+    border-bottom: #015369 solid 2px;
+    padding-bottom: 20px;
+}
+.dropdown {
+    padding-top: 10px;
+    text-align: end;
+}
+#address {
+    background: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+/* location end */
+
+/* orderonline start */
+#header .selectedloc {
+    margin-top: -90px;
+    color: white;
+}
+.menu {
+    margin-top: 20px;
+    z-index: 99;
+  }
+  .panel { 
+    display: none; 
+  }
+  .show { 
+    display: block; 
+  }
+  .button { 
+    text-transform: uppercase;
+    padding: 5px;
+    font-style: inherit;
+    border: none;
+    border-radius: 5px;
+  }
+  .button:hover { 
+    cursor: pointer;   
+    background-color: #fffff0; 
+  }
+  #all h3{
+    border-bottom: solid black 2px;
+  }
+  #all .rowbox {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 15px;
+    border: none;
+    text-align: start;
+  }
+  #all .flex-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #all img {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #popularitems h4{
+    border-bottom: solid black 2px;
+  }
+  #popularitems .rowbox {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 15px;
+    border: none;
+    text-align: start;
+  }
+  #popularitems .flex-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #popularitems img {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #beverages  h4{
+    border-bottom: solid black 2px;
+  }
+  #beverages .rowbox {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 15px;
+    border: none;
+    text-align: start;
+  }
+  #beverages  .flex-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #beverages  img {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #meals h4{
+    border-bottom: solid black 2px;
+  }
+  #meals .rowbox {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 15px;
+    border: none;
+    text-align: start;
+  }
+  #meals .flex-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #meals img {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #menu .rowbox:hover { 
+    cursor: pointer;   
+    background-color: #fffff0;
+    box-shadow: #a19e9e 5px 5px 10px ; 
+  }
+  #menu-footer{
+    width: 100%;
+    background: #c4c4c4;
+    padding-bottom: 20px;
+    margin-top: 165px;
+  }
+  #order{
+  position: fixed;
+  height: 50px;
+  bottom: 60px;
+  right: 100px;
+  border-radius: 30px;    
+  }
+  #menu img{
+    border-radius: 50%;
+  }
+  @media (min-width: 1025px) {
+    .h-custom {
+    height: 100vh !important;
+    }
+  }
+/* onrderonline end */
 
 /* our gallary start */
 #gallary{
@@ -235,7 +409,7 @@ html{
     width: 100%;
     background: #c4c4c4;
     padding-bottom: 20px;
-    padding-top: 100px;
+    margin-top: 50px;
 }
 .footer-logo img{
     width: 180px;
@@ -243,7 +417,7 @@ html{
     margin-top: 30px;
     cursor: pointer;
 }
-.socail-links i{
+.social-links i{
     font-size: 17px;
     margin-left: 10px;
     margin-top: 30px;
@@ -256,7 +430,7 @@ html{
 .credits{
     color: #015369;
     margin-top: 20px;
-    text-shadow: 0px 0px 1px black;
+    text-shadow: 0px 0px 1px #17b2e2;
 }
 .credits a{
     text-decoration: none;
