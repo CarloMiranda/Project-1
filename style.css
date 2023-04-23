@@ -90,7 +90,7 @@ html{
     margin-left: 50px;
 }
 #home .content h3{
-    font-size: 70px;
+    font-size: 50px;
     color: white;
 }
 #home .content p{
@@ -169,12 +169,21 @@ html{
     background-color: #015369;
     color: white;
 }
+
+@media screen and (max-width:1050px){
+
+    #about{
+        height: 120vh;
+        padding-bottom: 900px;
+    }
+}
 @media screen and (max-width:766px){
     #about p{
         font-size: 15px;
     }
     #about{
         height: 120vh;
+        padding-bottom: 900px;
     }
     #column{
         display: flex;
@@ -189,7 +198,7 @@ html{
     #home .content{
         padding-top: 130px;
         margin-left: 50px;
-    } 
+    }
 }
 /* about section end */
 
@@ -345,7 +354,7 @@ html{
   #menu img{
     border-radius: 50%;
   }
-  @media (min-width: 1025px) {
+  @media (min-width: 766px) {
     .h-custom {
     height: 100vh !important;
     }
