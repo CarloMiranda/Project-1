@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Merriweather', serif;
+    font-family: 'Merriweather','Roboto', serif;
 }
 
     
@@ -80,14 +80,14 @@ html{
 
 /* home section start */
 .banner-image{
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(./images/homebanner.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(./images/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100%;
 }
 #home .content{
     padding-top: 180px;
-    margin-left: 50px;
+
 }
 #home .content h3{
     font-size: 50px;
@@ -154,7 +154,7 @@ html{
 #about .card img{
     border-radius: 10px;
 }
-#about-btn{
+.about-btn{
     width: 250px;
     height: 36px;
     border: 2px solid black;
@@ -165,7 +165,7 @@ html{
     cursor: pointer;
 
 }
-#about-btn:hover{
+.about-btn:hover{
     background-color: #015369;
     color: white;
 }
